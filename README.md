@@ -6,15 +6,15 @@ This project prices a European call option using Monte Carlo simulation of Geome
 2. Computation - for each simulated path, the option payoff at expiry is calculated by max(S_T -K,0) where S_T is the stock price and K is the strike price
 3. Average & Discount -the mean payoff from each simulated path is calculated and discounted back to todays value (not the price in a year) using the risk-free interest rate and so we have our Monte Carlo estimate
 4. Compare - the same option is priced using the Black-Scholes formula which gives the exact truth to check the simulation converges correctly
-## Graph
+## Graph-
 The convergence plot shows how the Monte Carlo estimate tends towards the Black-Scholes answer as the number of estimations increase from 100 to 50,000 thus clearly illustrating and exemplifying the Law of Large Numbers - the greater the number of samples averaged, the closer the sample mean is to the true answer. 
 The shaded region around the Monte Carlo graph represents the 95% confidence interval which stems from the standard error, as the number of simulations increase the standard error decreases , since standard error scales with 1/root n (Quadrupling simulations, halves uncertainty) 
-## How to run this code
+## How to run this code-
 You will need some form of python engine installed (personally use Pycharm community edition)
 . Numpy - for vectorised path calculations
 . scipy - for cumulative normal distribution (CND) that is used in the Black-Scholes formula.
 . matplotlib - for the graph
-## Assumptions 
+## Assumptions-
 This project uses standard assumptions which confine reality in the following ways: 
 - European-style only, this project covers options that are priced at expiry not before like American ones allow
 - Volatility is constant - real markets have changing volatilities
