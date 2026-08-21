@@ -7,6 +7,7 @@ This project prices a European call option using Monte Carlo simulation of Geome
 3. Average & Discount -the mean payoff from each simulated path is calculated and discounted back to todays value (not the price in a year) using the risk-free interest rate and so we have our Monte Carlo estimate
 4. Compare - the same option is priced using the Black-Scholes formula which gives the exact truth to check the simulation converges correctly
 ## Graph-
+![Convergence plot](Monte_Carlo_graph.png)
 The convergence plot shows how the Monte Carlo estimate tends towards the Black-Scholes answer as the number of estimations increase from 100 to 50,000 thus clearly illustrating and exemplifying the Law of Large Numbers - the greater the number of samples averaged, the closer the sample mean is to the true answer. 
 The shaded region around the Monte Carlo graph represents the 95% confidence interval which stems from the standard error, as the number of simulations increase the standard error decreases , since standard error scales with 1/root n (Quadrupling simulations, halves uncertainty) 
 ## How to run this code-
