@@ -17,7 +17,7 @@ You will need some form of python engine installed (personally use Pycharm commu
 -  matplotlib - for the graph
 ## Assumptions-
 This project uses standard assumptions which confine reality in the following ways: 
-- European-style only, this project covers options that are priced at expiry not before like American ones allow
+- European-style only, this project covers options that are priced at expiry not before expiry like American ones allow
 - Volatility is constant - real markets have changing volatilities
 - No dividends - the asset is assumed to pay no dividends over the options life which would affect the calculations
 
