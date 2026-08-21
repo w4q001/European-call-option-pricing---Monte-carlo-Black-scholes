@@ -12,9 +12,9 @@ The convergence plot shows how the Monte Carlo estimate tends towards the Black-
 The shaded region around the Monte Carlo graph represents the 95% confidence interval which stems from the standard error, as the number of simulations increase the standard error decreases , since standard error scales with 1/root n (Quadrupling simulations, halves uncertainty) 
 ## How to run this code-
 You will need some form of python engine installed (personally use Pycharm community edition)
-. Numpy - for vectorised path calculations
-. scipy - for cumulative normal distribution (CND) that is used in the Black-Scholes formula.
-. matplotlib - for the graph
+- numpy - for vectorised path calculations
+-  scipy - for cumulative normal distribution (CND) that is used in the Black-Scholes formula.
+-  matplotlib - for the graph
 ## Assumptions-
 This project uses standard assumptions which confine reality in the following ways: 
 - European-style only, this project covers options that are priced at expiry not before like American ones allow
